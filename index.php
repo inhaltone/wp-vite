@@ -12,7 +12,7 @@ if (have_posts()) :
     /* Start the Loop */
     while (have_posts()) : the_post(); ?>
 
-    <h1><?php var_dump(get_post()); ?></h1>
+        <h1><?php echo get_post()->post_title; ?></h1>
 
     <?php endwhile;
 

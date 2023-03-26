@@ -5,7 +5,7 @@ A WordPress starter theme utilising Vite.js
 ### Clone repository
 
 ```bash
-$ git clone
+$ git clone git@github.com:inhaltone/wp-vite.git
 ```
 ### Install dependencies
 ```bash

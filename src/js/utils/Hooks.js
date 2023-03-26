@@ -4,7 +4,6 @@ export function onMounted(callback) {
     if (typeof window !== 'undefined') {
         window.addEventListener('DOMContentLoaded', () => {
             const appElement = document.getElementById(Router.BASE.routeId);
-            console.log('APPPPP', appElement);
             callback(appElement);
         })
     }
@@ -13,7 +12,8 @@ export function onMounted(callback) {
 export function onLoaded(callback) {
     if (typeof window !== 'undefined') {
         window.addEventListener('load', () => {
-            callback(document.getElementById(Router.BASE.routeId));
+            const appElement = document.getElementById(Router.BASE.routeId);
+            callback(appElement);
         });
     }
 }
