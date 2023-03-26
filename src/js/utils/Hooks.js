@@ -3,7 +3,9 @@ import Router from "./Router.js";
 export function onMounted(callback) {
     if (typeof window !== 'undefined') {
         window.addEventListener('DOMContentLoaded', () => {
-            callback(document.getElementById(Router.BASE.routeId));
+            const appElement = document.getElementById(Router.BASE.routeId);
+            console.log('APPPPP', appElement);
+            callback(appElement);
         })
     }
 }
